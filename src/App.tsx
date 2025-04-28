@@ -21,7 +21,7 @@ const App = () => (
             <Header />
             <main className="min-h-screen pb-10">
               <Routes>
-                <Route path="/" element={<HomePage />} />
+                <Route path="/bingecrave" element={<HomePage />} />
                 <Route path="/checkout" element={<CheckoutPage />} />
                 <Route path="/success" element={<SuccessPage />} />
                 <Route path="*" element={<NotFound />} />
