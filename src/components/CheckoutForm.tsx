@@ -1,9 +1,8 @@
 
 import React, { useState } from 'react';
 import { Label } from '@radix-ui/react-label';
-import { Input } from './ui/Input';
 import { Button } from './ui/button';
-import { Textarea } from './ui/Textarea';
+import { Textarea } from './ui/textarea';
 import { useCart } from '../context/CartContext';
 import { Info } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +12,7 @@ import { fakeApiCall } from '../../api/fakeApiCalls';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { RadioGroup, RadioGroupItem } from '@radix-ui/react-radio-group';
 import { Alert, AlertDescription, AlertTitle } from './ui/alert';
+import { Input } from './ui/Input';
 
 const DELIVERY_CHARGE = 10; // Fixed delivery charge of Rs10
 
@@ -195,7 +195,7 @@ const CheckoutForm: React.FC = () => {
               
               <div className="space-y-2">
                 <Label htmlFor="street">Street Address</Label>
-                <Input 
+                <Input
                   id="street" 
                   name="street"
                   placeholder="Street address, apartment, etc." 
